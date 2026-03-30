@@ -1,0 +1,28 @@
+{
+    "response": [
+        {
+            "maintainer": "Chara/Garry",
+            "oem": "",
+            "device": "",
+            "filename": "CharaROM-v1.0-Android16-20260330-UNOFFICIAL-Alpha-dre.zip",
+            "download": "https://sourceforge.net/projects/crdroid/files/dre/UNOFFICIAL.x/CharaROM-v1.0-Android16-20260330-UNOFFICIAL-Alpha-dre.zip/download",
+            "timestamp": 1774830281,
+            "md5": "74d30b76d2b6d22484aa0bf9e922bb61",
+            "sha256": "a76cadf073d0264a43e8f8e6bc8415d1929f503b708951ec78161c88d901c567",
+            "size": 1436994790,
+            "version": "1.0",
+            "buildtype": "",
+            "forum": "",
+            "gapps": "",
+            "firmware": "",
+            "modem": "",
+            "bootloader": "",
+            "recovery": "",
+            "paypal": "N/A",
+            "telegram": "",
+            "dt": "",
+            "common-dt": "N/A",
+            "kernel": ""
+        }
+    ]
+}
