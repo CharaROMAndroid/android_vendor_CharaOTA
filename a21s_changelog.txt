@@ -1,8 +1,0 @@
-Build type: Monthly
-Device: Samsung Galaxy A21s (a21s)
-Device maintainer: Mustafa
-Highlights & Device Specific Changes:
-
-===== 02-08-2026 =====
-- Synced with latest sources. (crDroid 12.7-QPR2 release)
-- Partially switch partitions to EROFS (author: DaemonMCR)
