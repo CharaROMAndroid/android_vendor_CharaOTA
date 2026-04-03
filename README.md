@@ -1,5 +1,5 @@
-# crDroid OTA repo
-In order for a device to be officially supported by crDroid, OTA information needs to be added.
+# CharaROM OTA repo
+In order for a device to be officially supported by CharaROM, OTA information needs to be added.
 Please refer to the following "Readme" to get started
 
 ## 1. Introduction ##
@@ -13,25 +13,26 @@ In order for a device to be OTA compliant, there are a few things to know.
         "maintainer": "Name (nickname)",
         "oem": "OEM",
         "device": "Device Name",
-        "filename": "crDroidAndroid-16.0-<date>-<device codename>-v<crversion>.zip",
-        "download": "https://sourceforge.net/projects/crdroid/files/<device codename>/<crversion>/crDroidAndroid-16.0-<date>-<device codename>-v<crversion>.zip/download",
+        "filename": "CharaROM-v<chararom-version>-<date>-<build-type>-Android<android-version>-<chararom-state>-<device>.zip", // example: CharaROM-v1.0-20260401-UNOFFICIAL-Android16-Alpha-dre.zip
+        "download": "https://github.com/chararomandroid/android_vendor_CharaOTA/releases/downloads/<code-reference-tag>/CharaROM-v<chararom-version>-<date>-<build-type>-Android<android-version>-<chararom-state>-<device>.zip", // example: https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/pa2t2/CharaROM-v1.0-20260402-UNOFFICIAL-Android16-Alpha-milanf.zip
         "timestamp": 0000000000,
         "md5": "abcdefg123456",
         "sha256": "abcdefg123456",
         "size": 123456789,
-        "version": "<crversion>",
-        "buildtype": "Testing/Alpha/Beta/Weekly/Monthly",
+        "version": "<chararomversion>",
+        "buildtype": "Experimental/Nightly/Snapshot/Release",
         "forum": "https://forum link", #(mandatory)
-        "gapps": "https://gapps link", #(mandatory)
+        "gapps": "https://gapps link", #(suggested)
         "firmware": "https://firmware link",
         "modem": "https://modem link",
         "bootloader": "https://bootloader link",
         "recovery": "https://recovery link",
         "paypal": "https://donation link",
         "telegram": "https://telegram link",
-        "dt": "https://github.com/crdroidandroid/android_device_<oem>_<device_codename>", #(mandatory)
-        "common-dt": "https://github.com/crdroidandroid/android_device_<orm>_<SOC>-common", #(mandatory)
-        "kernel": "https://github.com/crdroidandroid/android_kernel_<oem>_<SOC>" #(mandatory)
+        "stoat": "https://stoat link", #(optional)
+        "dt": "https://github.com/chararomandroid/android_device_<oem>_<device_codename>", #(mandatory)
+        "common-dt": "https://github.com/chararomandroid/android_device_<oem>_<SOC>-common", #(mandatory)
+        "kernel": "https://github.com/chararomandroid/android_kernel_<oem>_<SOC>" #(mandatory)
     }
   ]
 }
@@ -44,6 +45,8 @@ Build type: Testing/Alpha/Beta/Weekly/Monthly
 Device: Device name (<device codename>)
 Device maintainer: Name (nickname)
 Required firmware: add if any else remove this line
+# If doing testing builds, unofficial builds, or otherwise "unknown maintenance" builds, it is permitted to not include the above text.
+# The following is generated at build time and thus should never be modified:
 
 ===== <date> =====
 - change 1
@@ -60,7 +63,7 @@ Required firmware: add if any else remove this line
 ## 3. How to ##
 For following below description, replace *codename* with your device codename. 
 ### 3.1 Initial support ###
-After you contacted [Gabriel on Telegram](https://telegram.me/gwolf2u), and have the approval, follow the below steps.
+After you contacted [The team on Telegram](https://telegram.me/bunnypaddev), and have the approval, follow the below steps.
 1. Fork this repo to your own GitHub.
 2. A file named *codename*.json is created in OUT dir after you built.
 3. Copy it to where this repo was cloned.
@@ -71,16 +74,16 @@ After you contacted [Gabriel on Telegram](https://telegram.me/gwolf2u), and have
 ### 3.2 Update build ###
 1. Clone this repo locally
 ```
-git clone git@github.com:crdroidandroid/android_vendor_crDroidOTA.git -b 16.0
+git clone git@github.com:chararomandroid/android_vendor_CharaOTA.git -b hershey
 ```
-2. Change to the directory where you cloned this repo (android_vendor_crDroidOTA) and fetch updates from repo.
+2. Change to the directory where you cloned this repo (android_vendor_CharaOTA) and fetch updates from repo.
 ```
-cd android_vendor_crDroidOTA
+cd android_vendor_CharaOTA
 git fetch --all
 git pull
 ```
 3. Copy *codename*.json file from OUT dir over to this repo).
-4. Make changes to *codename*_changelog.txt.
+4. Make changes to *codename*_changelog.txt if needed.
 5. Now with the files updated, commit your update to this repo.
 ```
 git add .
