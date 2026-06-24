@@ -1,8 +1,4 @@
 ====================
-     06-22-2026
-====================
-
-====================
      06-21-2026
 ====================
 
@@ -10,18 +6,12 @@
 6450d58 compat: Introduce libtinyxml2 v36
 f13c559 compat: Provide libbluetooth_audio_session_aidl shim
 
-   * lineage/mirror
-8fd1615 Updated to 20-Jun-2026 10:01 UTC
-
 ====================
      06-20-2026
 ====================
 
-   * packages/apps/GameSpace
-801ff3c New Crowdin updates (#151)
-
-   * packages/apps/LMOFreeform
-4f302dd New translations (#30)
+   * lineage/mirror
+8fd1615 Updated to 20-Jun-2026 10:01 UTC
 
 ====================
      06-19-2026
@@ -35,6 +25,12 @@ f13c559 compat: Provide libbluetooth_audio_session_aidl shim
 
    * lineage/mirror
 94ee717 Updated to 18-Jun-2026 22:01 UTC
+
+   * packages/apps/GameSpace
+801ff3c New Crowdin updates (#151)
+
+   * packages/apps/LMOFreeform
+4f302dd New translations (#30)
 
    * vendor/apn
 8b06f42 apns: Add IMS routing for Bangladesh operators
@@ -133,10 +129,6 @@ fba06ffd2 DeskClock: Increase importance of all notifications
    * packages/resources/devicesettings
 d14439f Automatic translation import
 
-   * packages/services/OmniJaws
-c79e634 OmniJaws: Update RU translations
-c3c1b69 OmniJaws: Remove hardcoded "Hourly forecast" strings in UI
-
    * system/sepolicy
 ab84d847c sepolicy: Allow app to lookup service manager
 
@@ -201,6 +193,8 @@ bd7c8c2 Update header design
 53ef664d Re-add Boot Animation changer
 
    * packages/services/OmniJaws
+c79e634 OmniJaws: Update RU translations
+c3c1b69 OmniJaws: Remove hardcoded "Hourly forecast" strings in UI
 6c9ff45 OmniJaws: Fix issues and improve sunrise / sunset card
 9787ac8 OmniJaws: Add delta info in Feels Like card
 1a49c07 OmniJaws: Add Open-Meteo weather provider
@@ -320,11 +314,6 @@ bf9be5a Automatic translation import
 eb4f772 Automatic translation import
 7e5781d LineageParts: Drop LineageOS copyright years
 
-   * packages/apps/Settings
-27a3bfd8dc2 Settings: Pull navigation mode settings out
-927d96b41de Settings: Move Notch Cutout to Display
-599b7097276 Settings: Hardcode Settings icon color in launcher
-
    * packages/apps/SetupWizard
 d73ba31 fix merge conflict
 1e8e706 Automatic translation import
@@ -395,4 +384,86 @@ b63f9bb9 temporarily remove Ripple until we can get it building properly
 7b2fb0db Update common.mk
 612e8797 Re-do version file
 e845b89e Update versioning for CharaROM release
+
+====================
+     06-12-2026
+====================
+
+   * frameworks/av
+6bc717cc5a CameraService: Add OnePlus camera extension support for zoom
+
+   * frameworks/base
+e47ec93abaa7 core: AHardwareBuffer fixes for oplus camera
+402f4a334ae1 ActionChain: Do not call collectExistenceChange if transition is null
+72ae9291c8e7 wm: don't disable rot hint on low_ram
+80984d9f6cb4 Revert "core: treat redraws and stretch effects as movement"
+
+   * frameworks/native
+3f7c442e35 Increase BINDER_VM_SIZE from 1MB to 4MB
+
+   * hardware/oplus
+a11c0aa Merge remote-tracking branch 'crdroid/16.0' into hershey
+34efa11 Merge remote-tracking branch 'lineage/lineage-23.2' into hershey
+1f8945c oplus-fwk: Expand com.oplus.uah stub
+6fbdb9f oplus-fwk: Add LinearmotorVibrator stub and shim
+04ee0b0 oplus-fwk: Update shims from OP13
+cf86f5c oplus-fwk: Simplify getMetadataTag and metaDataValueConvert
+30a5c41 oplus-fwk: sendOplusExtCamCmd: Don't enforce permissiom PERMISSION_SAFE_CAMERA
+faf360c oplus-fwk: Update to latest IOplusCameraManager Cmd enum
+c05f88a oplus-fwk: Add more stubs for Oplus Camera new IOS-style UI update
+0c08690 oplus-fwk: Add OplusAudioManager stub
+4d663e1 oplus-fwk: Add more classes for OOS 16 oplus camera
+8f21e01 sepolicy: qti: Drop duplicated wakeup nodes
+
+   * lineage/hudson
+e36b84a Regenerate device dependency mappings
+
+   * lineage/mirror
+8e883b1 Updated to 11-Jun-2026 22:01 UTC
+
+   * packages/apps/LineageParts
+e26cf0f DisplayRotation: Replaced outdated checkboxes with switches
+
+   * packages/apps/Settings
+27a3bfd8dc2 Settings: Pull navigation mode settings out
+927d96b41de Settings: Move Notch Cutout to Display
+599b7097276 Settings: Hardcode Settings icon color in launcher
+57391cae222 Settings: Use dynamic colors for biometrics enroll style
+0194b80f01d Settings: Add build maintainer preference
+c77441e53ac Remove unneeded line from FirmwareVersionScreen
+fdbc322361b Remove eye of horus
+82075063ce8 Add Apache-2.0 LICENSE file
+1be999dd161 Settings: deviceinfo: Restore missing summary protections
+863499a4cb3 Settings: ImeiInfoDialogFragment: Add missing FLAG_SECURE
+33dac040ecf Settings: top_level_settings_expressive: Move account to bottom again
+edf7af552e2 Settings: Use CaesiumOS easter egg
+10f58f5be98 Settings: Use CaesiumOS easter egg
+7b84caf027e Hide app feature
+4c554dd731e Settings: Make AppCloning independent of DeviceConfig
+ab4df7bf707 Settings: Enable clone apps
+a1b4c1ed7be Settings: explicitly enable cloned apps
+a1cd8850605 amend! Move codename to its own section
+7733f012dba BasebandVersionPreferenceController: Trim baseband if needed
+66ec88e8088 Settings: Fix NPE in UserBackupSettingsActivity due to missing setContentView
+9e556798cd9 Settings: Fix NPE in FingerprintSettings (UDFPS screen-off toggle)
+f232f14827d Settings: Fix custom Private DNS hostname being overwritten
+f447c0af79a fix compile errors
+b2d9417f3e0 Add codename to settings strings, again
+2859954ca39 Move codename to its own section
+eceffa08943 Revert "Remove crDroid "eye of Horus", add CharaROM Codename"
+316668b5de8 touche. I'll just add it here then.
+dbee8028435 attempt 2 at getting Settings to read the right thing
+e3dbdaedcd6 Point settings in the right direction
+593347c119e Fix Unity's mistakes
+3f0c0d4938a Remove crDroid "eye of Horus", add CharaROM Codename
+ff6b7bdc8ce Make Settings read the right property
+fd10f71459e Fixed formatting error in strings.
+428179e1046 Make settings read the correct property
+d439f82667c Add CharaROM flavoring to some strings.
+
+   * system/sepolicy
+8c5bccd11 Allow init and vendor_init to access proc_type
+
+   * vendor/addons
+75adbdd6 Merge remote-tracking branch 'crdroid/16.0' into hershey
 

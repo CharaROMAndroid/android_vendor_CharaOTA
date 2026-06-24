@@ -1,0 +1,29 @@
+{
+    "response": [
+        {
+            "maintainer": "Chara",
+            "oem": "Motorola",
+            "device": "Moto G Stylus 5G (2022) [XT2215]",
+            "filename": "CharaROM-v1.0-20260620-UNOFFICIAL-Android16-Beta-milanf.zip",
+            "download": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases",
+            "timestamp": 1781995917,
+            "md5": "8242537fc340844016bc9c182cdbb28c",
+            "sha256": "c210ada450cdbc2746967b4eeeb15eaa43242ed7f3839b776059526eb03bc6ba",
+            "size": 1420694166,
+            "version": "1.0",
+            "buildtype": "Release",
+            "forum": "https://chararom.xyz",
+            "gapps": "https://bitgapps.io/",
+            "firmware": "https://mirrors-obs-1.lolinet.com/firmware/lenomola/2022/milanf/official/",
+            "modem": "https://mirrors-obs-1.lolinet.com/firmware/lenomola/2022/milanf/official/",
+            "bootloader": "https://mirrors-obs-1.lolinet.com/firmware/lenomola/2022/milanf/official/",
+            "recovery": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/recovery/CharaROM-20260402-recovery-milanf.zip",
+            "paypal": "https://paypal.me/bunnypad",
+            "telegram": "https://t.me/bunnypaddev",
+            "stoat": "https://stt.gg/TmpdFStp",
+            "dt": "https://github.com/CharaROMAndroid/android_device_motorola_milanf",
+            "common-dt": "https://github.com/CharaROMAndroid/[android_device_motorola_sm6375-common",
+            "kernel": "https://github.com/CharaROMAndroid/android_kernel_motorola_sm6375"
+        }
+    ]
+}
