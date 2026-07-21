@@ -1,0 +1,31 @@
+{
+    "response": [
+        {
+            "maintainer": "TheTrueClover",
+            "oem": "Xiaomi",
+            "device": "Redmi Note 14",
+            "filename": "CharaROM-v1.0-DATE-RELEASE-Android16-Beta-tanzanite.zip",
+            "download": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases",
+            "timestamp": 1784440470,
+            "md5": "5f3e725a81b9959fa7b28227b62dedf2",
+            "sha256": "17850ee26171eedf88888682d2b512fd1038257ae178af608eaad7e06be563cd",
+            "size": 1543304472,
+            "version": "1.0",
+            "os_patch_level": "2026-07-01",
+            "os_sdk_level": 36,
+            "buildtype": "Release",
+            "forum": "https://chararom.xyz",
+            "gapps": "https://bitgapps.io/",
+            "firmware": "https://chararom.xyz",
+            "modem": "https://chararom.xyz",
+            "bootloader": "https://chararom.xyz",
+            "recovery": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/recovery/tanzanite_hershey_recovery_04222026.zip",
+            "paypal": "https://paypal.me/bunnypad",
+            "telegram": "https://t.me/bunnypaddev",
+            "stoat": "https://stt.gg/TmpdFStp",
+            "dt": "https://github.com/CharaROMAndroid/android_device_xiaomi_tanzanite",
+            "common-dt": "https://github.com/CharaROMAndroid/android_device_xiaomi_tanzanite",
+            "kernel": "https://github.com/CharaROMAndroid/android_kernel_xiaomi_tanzanite"
+        }
+    ]
+}
