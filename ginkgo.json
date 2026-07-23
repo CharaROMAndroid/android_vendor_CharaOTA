@@ -14,18 +14,18 @@
             "os_patch_level": "2026-07-01",
             "os_sdk_level": 36,
             "buildtype": "Test",
-            "forum": "https://chararom.xyz",
+            "forum": "https://chararom.xyz/",
             "gapps": "https://bitgapps.io/",
-            "firmware": "not there yet",
-            "modem": "not there yet",
-            "bootloader": "not there yet",
-            "recovery": "not there yet",
-            "paypal": "none",
+            "firmware": "https://chararom.xyz/",
+            "modem": "https://chararom.xyz/",
+            "bootloader": "https://chararom.xyz/",
+            "recovery": "https://chararom.xyz/",
+            "paypal": "https://chararom.xyz/",
             "telegram": "https://t.me/bunnypaddev",
             "stoat": "https://stt.gg/TmpdFStp",
-            "dt": "to fill later",
-            "common-dt": "to fill later",
-            "kernel": "to fill later"
+            "dt": "https://chararom.xyz/",
+            "common-dt": "https://chararom.xyz/",
+            "kernel": "https://chararom.xyz/"
         }
     ]
 }
