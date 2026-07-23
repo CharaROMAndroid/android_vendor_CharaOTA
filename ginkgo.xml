@@ -1,0 +1,31 @@
+{
+    "response": [
+        {
+            "maintainer": "jpb",
+            "oem": "Xiaomi",
+            "device": "Redmi Note 8",
+            "filename": "CharaROM-v1.0-20260719-TESTRELEASE-Android16-Beta-ginkgo.zip",
+            "download": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/beta3/CharaROM-v1.0-20260719-TESTRELEASE-Android16-Beta-ginkgo.zip",
+            "timestamp": 1784440470,
+            "md5": "a7a4299619618ff880d87002f4a3d781",
+            "sha256": "5ebf09006ddd051f9193d9467fb53558083ebb6f4399fadf301e13f5774a1489",
+            "size": 1490588513,
+            "version": "1.0",
+            "os_patch_level": "2026-07-01",
+            "os_sdk_level": 36,
+            "buildtype": "Test",
+            "forum": "https://chararom.xyz",
+            "gapps": "https://bitgapps.io/",
+            "firmware": "not there yet",
+            "modem": "not there yet",
+            "bootloader": "not there yet",
+            "recovery": "not there yet",
+            "paypal": "none",
+            "telegram": "https://t.me/bunnypaddev",
+            "stoat": "https://stt.gg/TmpdFStp",
+            "dt": "to fill later",
+            "common-dt": "to fill later",
+            "kernel": "to fill later"
+        }
+    ]
+}
