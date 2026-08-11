@@ -40,18 +40,7 @@ In order for a device to be OTA compliant, there are a few things to know.
 
 ### 1.2 changelog.txt structure ### 
 ```
-Highlights & Device Specific Changes:
-Build type: Testing/Alpha/Beta/Weekly/Monthly
-Device: Device name (<device codename>)
-Device maintainer: Name (nickname)
-Required firmware: add if any else remove this line
-# If doing testing builds, unofficial builds, or otherwise "unknown maintenance" builds, it is permitted to not include the above text.
-# The following is generated at build time and thus should never be modified:
-
-===== <date> =====
-- change 1
-- change 2
-- change 3
+Do NOT change from the automatically generated one.
 ```
 
 ## 2 Guidelines ##
@@ -82,11 +71,10 @@ cd android_vendor_CharaOTA
 git fetch --all
 git pull
 ```
-3. Copy *codename*.json file from OUT dir over to this repo).
-4. Make changes to *codename*_changelog.txt if needed.
-5. Now with the files updated, commit your update to this repo.
+3. Copy *codename*.json and *codename*_changelog.txt file from OUT dir over to this repo).
+3. Now with the files updated, commit your update to this repo.
 ```
 git add .
-git commit #(this opens up your prefered text editor, so write a nice description like "<device codename>: update build")
+git commit #(this opens up your prefered text editor, so write a nice description like "<device codename>: update build". If updating multiple devices, write something like *Preferred Name*: Update builds for *codename1* and *codename2*)
 git push #you may be prompted for your github username and password
 ```
