@@ -1,192 +1,304 @@
 ====================
-     03-10-2026
+     08-18-2026
 ====================
 
--Update to crDroid 12.8 with new features and reworked old ones, plus the March SPL
-
-   * frameworks/base
-9f2f8f2c0 SystemUI: Do not invalidate ongoing chip bg color often
-
-   * hardware/qcom-caf/common
-17cf2d7 fwk-detect: Make CneApp lib symlink depend on the lib itself
-
-   * vendor/qcom/opensource/core-utils-vendor
-8f51d32 fwk-detect: Make CneApp lib symlink depend on the lib itself
-
 ====================
-     03-09-2026
+     08-17-2026
 ====================
 
-   * android
-874b618 manifest: Temporarily track MediaProvider and Virtualization
+   * device/oneplus/dre
+07fc0c8 dre: add COMMON_LUNCH_CHOICES with user first
 
-   * frameworks/av
-9bb68a6 fix null derefence exception when surface is reset
+   * device/xiaomi/tanzanite
+1508d96 tanzanite: Update Yuuka Kernel Source
 
-   * frameworks/native
-ecea493 surfaceflinger: Ignore when `getLuts` is unsupported
-
-   * lineage/mirror
-739130d Updated to 09-Mar-2026 23:01 UTC
-
-   * lineage/wiki
-2a60ee9 wiki: XPeriFirm -> XperiFirm
-
-   * packages/apps/DocumentsUI
-b2a4d21 Use proper background in dark theme
-
-   * packages/apps/Settings
-c9beb79 Set launch mode to singleTop for UserBackupSettingsActivity
-
-   * packages/apps/crDroidSettings
-79f4468 New Crowdin updates (#1298)
-
-   * packages/modules/Permission
-f6d2e01 SafetyCenterUtils: This function is only used by tests
-
-   * packages/services/Telephony
-d874de9 Telephony: Migrate MainSwitchBar and Switch to Material3
-
-   * vendor/lineage
-d76710c crdroid: Bump to version 12.8
-
-====================
-     03-08-2026
-====================
-
-   * device/lineage/sepolicy
-0c5e39d sepolicy: Add rules to allow powerhal accessing IStates AIDL
-
-   * hardware/interfaces
-84f71bdf compatibility_matrices: Add p/android-4.4 into FCM 5
-
-   * lineage-sdk
-3818f8a sdk: SelfRemovingPreference: set visibility at early stage
-
-   * packages/modules/Bluetooth
-a0225a7 Merge 'lineage-23.2' into 16.0
-
-====================
-     03-07-2026
-====================
-
-   * hardware/sony
-7d3109e sepolicy: Allow type transition for bluetooth_calibration file
+   * device/xiaomi/tanzanite-kernel
+f656582 tanzanite-kernel: Update Yuuka Prebuilt Kernel - From: https://github.com/MillenniumOSS/android_device_millennium_common-kernel/commit/14d2dedef807e71a7f219b5c4475ec3a2aec951e
+d3cd9ae tanzanite-kernel: Update Yuuka Prebuilt Kernel - From: https://github.com/MillenniumOSS/android_device_millennium_common-kernel/commit/84af071436120ecbe9a60e6975460f251215f9ca
 
    * lineage/hudson
-e18a89e Regenerate device dependency mappings
-
-   * packages/apps/ColumbusService
-6985007 Merge pull request #5 from Project-CHerta/16.0
-
-   * packages/resources/devicesettings
-75a5924 Revert "DeviceSettings: Migrate MainSwitchBar and Switch to Material3"
-
-   * vendor/apn
-e82310c apn: Update Bell/TELUS + MVNOs IMS protocol
-
-====================
-     03-06-2026
-====================
-
-====================
-     03-05-2026
-====================
-
-====================
-     03-04-2026
-====================
-
-   * device/qcom/sepolicy_vndr/sm8750
-d1f0450 parrot: Label qcom,qupv3_1_geni_se/a80000.i2c/i2c-2/2-0028 wakeup node
-
-   * packages/apps/GameSpace
-e8f014d New translations (#132)
-
-   * packages/apps/Launcher3
-76083d1 Launcher3: TaskbarStashController: Prevent against null PendingIntent
-
-====================
-     03-03-2026
-====================
-
-   * hardware/qcom-caf/sm8450-6.6/audio/pal
-f5ab612 pal: Fix platform checks
-
-   * hardware/qcom-caf/sm8450-6.6/audio/primary-hal
-aa04bf4 hal: Fix libaudiocorehal.qti vintf fragments
-
-   * packages/modules/Virtualization
-b00eb10 vmbase,pvmfw: aarch64: Clean dcache to PoC not PoU
-
-   * packages/providers/MediaProvider
-e8e9568 Throw exception on MediaStore createRequest for non-existent uri
-
-====================
-     03-02-2026
-====================
-
-====================
-     03-01-2026
-====================
-
-   * hardware/qcom-caf/sm8450-6.6/audio/agm
-58c1c90 agm: remove "LOG_TAG" in device.c
-
-   * hardware/qcom-caf/sm8450-6.6/audio/graphservices
-704ed68 Revert "Disable 32 bit variants of audio libraries for 64 bit audio targets"
-
-   * hardware/qcom-caf/sm8550/display
-c0ad2c5 composer: Support Pixelworks HW iris 7 color calibration
-
-   * packages/apps/Aperture
-3b6bc17 Automatic translation import
-
-   * packages/apps/AudioFX
-05d6710 Automatic translation import
-
-   * packages/apps/Camelot
-27e5e16 Automatic translation import
-
-   * packages/apps/Catapult
-521a06c Automatic translation import
-
-   * packages/apps/Contacts
-45ccf17 Automatic translation import
-
-   * packages/apps/DeskClock
-c01b9dd Automatic translation import
-
-   * packages/apps/FMRadio
-408f46a Automatic translation import
-
-   * packages/apps/FlipFlap
-7cbeb3f Automatic translation import
-
-   * packages/apps/Glimpse
-097d818 Automatic translation import
+82331a0 Regenerate device dependency mappings
 
    * packages/apps/Jelly
-f2783ed Automatic translation import
+7678330 Jelly: Desktop shortcuts
 
-   * packages/apps/Profiles
-6cd3b62 Automatic translation import
+   * vendor/lineage
+b208951 vendor: build F-Droid XML
 
-   * packages/apps/Recorder
-b670004 Automatic translation import
+====================
+     08-16-2026
+====================
 
-   * packages/apps/Twelve
-29b5126 Automatic translation import
+   * kernel/motorola/sm6375
+263b47f4c1c5 Revert more broken sound/bluetooth files to lineage-23.2
 
-   * packages/providers/DownloadProvider
-719d3b6 Automatic translation import
+   * lineage/mirror
+16b51f5 Updated lineage-minimal to 16-Aug-2026 06:02 UTC
 
-   * packages/services/Mms
-d6713d2 Automatic translation import
+   * lineage/scripts
+6556196 lineage-priv-template: Check apexes in `*/apex` instead of `obj`
+9024f8d lineage-priv-template: Add com.android.hardware.drm.clearkey
+
+   * lineage/wiki
+d887f9c6 wiki: signing_builds: Add com.android.hardware.drm.clearkey
+6b2be946 wiki: b0s/g0s/r0s: 3x -> 3 x
+87eef6ed wiki: b0s/g0s/r0s: Mark as not unlockable
+dca0a19d wiki: Add Galaxy S22 (Exynos) Devices
+
+   * packages/apps/DeskClock
+519341282 Automatic translation import
+
+   * packages/apps/SetupWizard
+15d7d4a SetupWizard: Remove unused Factory Reset trigger code
 
    * vendor/crowdin
-0a75736 Automatic translation import
+a35ba05 Automatic translation import
 
    * vendor/qcom/opensource/commonsys/fm
-f339ceb Automatic translation import
+cbbc60a Automatic translation import
+
+====================
+     08-15-2026
+====================
+
+   * device/oneplus/dre
+9c4c166 chararom: implement dynamic OxygenOS version reporting
+
+   * frameworks/base
+2c30612e3a57 SystemUI: Add panic button to power menu and QS tiles
+
+   * hardware/motorola
+7cf09f9 sepolicy: Label display node used by thermal-engine
+
+   * lineage-sdk
+e85eaa46 lineage-sdk: remove hwparam.json
+59a7cd50 PowerMenuConstants: Add panic action
+
+   * lineage/hudson
+1cec7d4 hudson: Add Galaxy S22 (Exynos) Devices
+
+   * packages/apps/CharaTweaks
+ecc8a634 PowerMenuActions: Add panic button toggle
+
+   * packages/apps/EmergencyButton
+e93455a Update README for CharaROM fork
+
+   * packages/apps/GameSpace
+ca3a15a New translations (#158)
+
+   * packages/apps/Jelly
+8bf990f Jelly: Add setting to toggle WebView debugging
+
+   * packages/apps/Settings
+78270d9da13 Settings: Duress: Add preference to security dashboard
+
+   * packages/apps/TriggerResponse
+ef96531 Update README for CharaROM fork
+
+   * packages/resources/apps
+946a384 New translations (#6)
+
+====================
+     08-14-2026
+====================
+
+   * external/exfatprogs
+de8ba66 Merge tag '1.4.3' of https://github.com/exfatprogs/exfatprogs into lineage-23.2
+a37d327 exfatprogs: release 1.4.3 version
+4f92594 libexfat: avoid overflow in file size calculation
+
+   * lineage/hudson
+1635a87 Regenerate device dependency mappings
+
+   * packages/apps/Settings
+0538d64da80 Settings: Duress: Attempt to get Duress settings to appear (-2)
+211393608c0 Settings: Duress: Attempt to get Duress settings to appear
+1f25c26775f Settings: Add duress password management UI
+
+====================
+     08-13-2026
+====================
+
+   * lineage/mirror
+d5211ce Updated to 13-Aug-2026 00:02 UTC
+
+   * lineage/wiki
+c324bd7a wiki: Add peripherals sort validator
+f3e2ee73 wiki: gts4lv/gts4lvwifi: Update peripherals
+54ffce7c wiki: odin_m0/odin_m2: Sort peripherals
+
+   * vendor/qcom/opensource/vibrator
+afe7232 vibrator: Add support for drv260x:haptics input device
+
+====================
+     08-12-2026
+====================
+
+   * external/prebuiltapks
+77c622a prebuilts: Add back ESpeakNG
+8b63f51 prebuilts: drop eSpeakNG and refactor common.mk
+
+   * hardware/qcom-caf/sm8450-6.6/audio/pal
+8342f6301 ResourceManager: Move some logging to verbose
+
+   * hardware/qcom-caf/sm8450/audio/pal
+c6f8e48dd ResourceManager: Move some logging to verbose
+
+   * hardware/qcom-caf/sm8550/audio/pal
+39e763ea1 ResourceManager: Move some logging to verbose
+
+   * hardware/qcom-caf/sm8650/audio/pal
+9cad645e8 ResourceManager: Move some logging to verbose
+
+   * hardware/qcom-caf/sm8750/audio/pal
+c0f825a23 ResourceManager: Move some logging to verbose
+
+   * lineage/mirror
+62495e8 Updated lineage-minimal to 12-Aug-2026 18:02 UTC
+1c14b8c Updated to 12-Aug-2026 06:01 UTC
+
+   * lineage/wiki
+ebc1390b Correct a typo in `pages/emulator.md`
+
+   * packages/apps/Settings
+58f3499cc24 Settings: Fix up System Sound Settings and Connectivity Check Strings
+0ae28117485 Settings: Rename Advanced Sounds to System Sounds
+
+====================
+     08-11-2026
+====================
+
+   * device/xiaomi/tanzanite
+bf51a54 tanzanite: Add Chaos Engineer Identifier
+20dbc59 tanzanite: Raise the frequency of sampling regions in SurfaceFlinger - This is done to attain precise 120Hz for frame fluidity.
+8360c24 tanzanite: Allow games to use 120FPS
+ca5a1e2 tanzanite: Hand back GPU Frequency control to gpufreqv2 * Based on https://github.com/moto-common/android_device_motorola_mt6879-common/blob/14/rootdir/vendor/etc/powerhint.json and https://github.com/yaap/device_motorola_cancunf/blob/fifteen/configs/powerhint.json for SEPolicy rules * Adapted for MT6789
+e3a14ca tanzanite: Add GKI source tree on README.md - Needed requirement for using custom kernels on CharaROM
+20e1925 tanzanite: Add more SF properties
+
+   * device/xiaomi/tanzanite-kernel
+ef52e7b tanzanite-kernel: Update Yuuka Prebuilt Kernel - From: https://github.com/MillenniumOSS/android_device_millennium_common-kernel/commit/40186c4f435032c4ec05472b5f2385d5c274fad7
+
+   * external/wpa_supplicant_8
+73b1074 nl80211: Skip NL80211_WPA_VERSION_3 for MediaTek devices
+
+   * kernel/oneplus/sm4350
+b3f963d2effe fix: revert broken backports and fix NOATIME indentation
+
+   * lineage-sdk
+611cd53c Remove setting loading for FORCE_SHOW_NAVBAR
+
+   * packages/apps/CharaTweaks
+266e3ac6 CharaTweaks: drawables: ic_team: remove tag left over from scaling script
+2cbc4da7 CharaTweaks: Add Blog and Team links
+
+   * packages/apps/Settings
+89d7ea5e38c hide Google Play system update version
+2d642939458 display full build info
+b1a472e3e52 fixup! Settings: Add toggle for Smart 5G [2/2]
+3f832cad224 Settings: Add toggle for Smart 5G [2/2]
+41c12e689d3 Settings: Re-organize sound settings page
+8240f4bd896 Settings: DevicePicker: Adapt to S style
+
+   * system/core
+e807540 init.rc: tune dirty data writebacks
+
+====================
+     08-10-2026
+====================
+
+   * hardware/lineage/interfaces
+805d253 health: Fix charging deadline node assignment
+
+   * lineage-sdk
+252608d6 LineageSettingsProvider: Add missing default values
+4e52a6ba Allow user switching when system user locked
+2314fc39 Restrict USB off by default in debuggable builds
+250959e4 User timeout feature II
+1ef341c7 Add preference key for maximum failed passwords for wipe, secure
+a8ce072e Add preference key for disabling user switcher on keyguard, secure
+70677979 Add DEFAULT_RESTRICT_NETWORK_DATA setting
+
+   * lineage/hudson
+1baa804 Regenerate device dependency mappings
+
+====================
+     08-09-2026
+====================
+
+   * device/xiaomi/tanzanite
+dd94f0d tanzanite: Import hotword blobs
+3451c6e tanzanite: Inherit signing keys if exists
+eb93193 tanzanite: overlay: Add Refresh Rate controls
+8f94f26 Revert "tanzanite: overlay: Settings: Enable Smooth Display setting"
+a735ea2 Revert "tanzanite: Halcyon bringup"
+
+   * lineage/mirror
+91c833c Updated to 09-Aug-2026 12:01 UTC
+
+   * packages/apps/CharaTweaks
+c4540348 CharaTweaks: Fix missing closing tag in German translation
+5410100b CharaTweaks: Remove duplicate translations
+a65383c3 CharaTweaks: Add Polish localizations
+b18e14ef CharaTweaks: Return dropped Russian translations
+39a43ba4 CharaTweaks: Revise README for CharaTweaks project
+147a4512 CharaTweaks: Translate CharaROM-specific strings to Russian
+504718a7 CharaTweaks: Add in German translations from a Telegram User
+bc5fb6fb CharaTweaks: Fix missing dependency
+66695b8b CharaTweaks: try to get it to scale with the display (BootAnimation)
+dc56cd7d CharaTweaks: Would be helpful if I actually saved the file! Does anyone have a Protogen I could borrow?
+657bcf42 CharaTweaks: Properly remove a STYLE_GOOGLE check from BootAnimation
+5ac4272a CharaTweaks: Remove STYLE_GOOGLE checks from BootAnimation
+12924cbf CharaTweaks: Add return statement in BootAnimationController
+2b3e8f5d CharaTweaks: Remove last traces of custom selector
+52ce7a21 CharaTweaks: Bootanimation: Fixup - Remove Custom Selector
+058ed917 CharaTweaks: Fix a method being improperly private
+82ff7319 CharaTweaks: Drop unused bootanimations
+023e2cdd CharaTweaks: Fix compile errors, deprecate some boot animations
+88a70009 CharaTweaks: BootAnimation: Compose rewrite with M3 Expressive UI
+5ae6674e CharaTweaks: Deprecate LMODroid Sidebar (Community vote)
+bec4fcdc CharaTweaks: fix MORE compile error caused by strings update
+e9bda04b CharaTweaks: fix compile error caused by strings update
+a849cec3 CharaTweaks: Fix duplicate definitions - BootAnimationChanger
+bf2e8f98 CharaTweaks: Fix typographical error
+6465230c CharaTweaks: Update strings, add Preliminary LibreDNS Support
+0defd5da CharaTweaks: add branding to build maintainer stuff
+365e3d06 CharaTweaks: Use Android TV Bootanimation in place of CyberPunk
+b985bf3d CharaTweaks: Fix custom boot animation
+8cbc80e1 CharaTweaks: bootanimation: general fix-up
+140a998f CharaTweaks: Fix SystemPropertyListPreference
+22ee647f CharaTweaks: Fixup and re-enable custom boot animation
+097eca96 CharaTweaks: Fix error in imported file
+c332a954 CharaTweaks: Fix boot animation array
+ea0a0a6c CharaTweaks: Disable custom boot animation choice
+fdce44d7 CharaTweaks: Make Boot Animation stuff fit better in-line with our UI
+95217d10 CharaTweaks: BootAnimation: Fix permission issue for custom boot animation
+32caae35 CharaTweaks: Introduce boot animation styles [3/3]
+9ee2e63c CharaTweaks: Include Apache License 2.0
+da8be839 CharaTweaks: Correct dynamic_bar conflict
+643d7562 CharaTweaks: Update donation message for better wording
+3f2e22a8 CharaTweaks: Switch to CharaROM Resources
+28385793 CharaTweaks: Adding CharaROM Branding to README.md
+e6f42d0a CharaTweaks: Adding CharaROM Branding/flavor - Text
+
+   * packages/apps/Jelly
+ce20325 Jelly: Fullscreen shortcut: dynamic statusbar color
+
+   * packages/apps/Settings
+e20aafb446b Settings: hide_developer_status_menu: Change where search string is pulled from
+9f56c2f04f3 Settings: hide_developer_status_menu: Get search string from LineageParts
+d633b594aa4 Settings: res: Restore Hide Developer Status resources
+2cb92af988a Revert "Settings: Features: Hide ADB and developer setting enable status [2/2]"
+9cf2d3e16d3 Revert "Settings: Improve hide developer options feature"
+61aa792c175 Revert "Settings: Un-import HideDeveloperStatusUtils"
+83d364929b9 Revert "Settings: Handle NPE in HideDeveloperStatusSettings"
+121e5f5d86e Revert "Settings: Features: HideDevStatus: Query all apps installed by any user"
+56c912f0548 Restrict "Turn on wifi automatically" to USA and Canada
+9fa43503bee Add hotspot setting to allow VPN upstream on VPN and Wi-Fi hotspot settings
+1a6bb9d9e26 Show TalkBack under vision accessibility settings during setup
+5f63eb18389 Enable AppCopyFragment
+b20bf18f29e Settings: Disable Autowipe and QSKeyguard toggles
+
+   * vendor/apn
+05ceef7 DE: Set IPV4V6 as protocol for o2 APNs
 
