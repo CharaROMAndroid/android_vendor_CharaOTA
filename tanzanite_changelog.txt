@@ -1,52 +1,51 @@
 ====================
-     08-19-2026
+     08-20-2026
 ====================
 
    * device/xiaomi/tanzanite
 aac85ab fixup! tanzanite: Switch back to prebuilt IMS stack
 
+   * external/prebuiltapks
+5ee4550 prebuilts: Disable Android Auto stub
+
    * lineage/mirror
-3171ffe Updated to 19-Aug-2026 06:01 UTC
+e7bd58c Updated to 20-Aug-2026 00:02 UTC
+
+   * lineage/wiki
+7c1a3c95 wiki: device_build_before_init: Add erofs-utils to dependencies
+
+   * vendor/lineage
+e44b266 envsetup: eat our package, not Lineage's
 
 ====================
-     08-18-2026
+     08-19-2026
 ====================
 
    * build/soong
-f01c2ae89 Merge pull request #1 from cinnamonbunni/hershey
-0fab4465b check_boot_jars: Add another Xiaomi's IMS allowlist
-e09f45aab check_boot_jars: Add Xiaomi's IMS allowlist * Required for MTK IMS on newer xiaomi devices.
+f01c2ae Merge pull request #1 from cinnamonbunni/hershey
 
    * device/qcom/sepolicy_vndr/sm8450
-269c7aca0 sepolicy_vndr: Add label for 64-bit ssgqmigd
-
-   * device/xiaomi/tanzanite
-aba8d4e tanzanite: Change Chaos maintainer identifier
-0429d3f tanzanite: Switch back to prebuilt IMS stack
-aac42a2 tanzanite: Use Millennium Common Kernel for Prebuilt GKI
+269c7aca sepolicy_vndr: Add label for 64-bit ssgqmigd
 
    * device/xiaomi/tanzanite-kernel
 6c9b5e5 tanzanite-kernel: Remove Image.gz * Since we use the Millennium Common Kernel now, there is no more use in it
 
    * vendor/xiaomi/tanzanite
-63b5556 tanzanite: Sync with device tree
+93eb857 tanzanite: Sync with device tree
 
 ====================
-     08-17-2026
+     08-18-2026
 ====================
 
    * device/millennium/common-kernel
 14d2ded common-kernel: Update Yuuka/Chihiro prebuilts
 
-   * device/oneplus/dre
-07fc0c8 dre: add COMMON_LUNCH_CHOICES with user first
+====================
+     08-17-2026
+====================
 
-   * device/xiaomi/tanzanite
-1508d96 tanzanite: Update Yuuka Kernel Source
-
-   * device/xiaomi/tanzanite-kernel
-f656582 tanzanite-kernel: Update Yuuka Prebuilt Kernel - From: https://github.com/MillenniumOSS/android_device_millennium_common-kernel/commit/14d2dedef807e71a7f219b5c4475ec3a2aec951e
-d3cd9ae tanzanite-kernel: Update Yuuka Prebuilt Kernel - From: https://github.com/MillenniumOSS/android_device_millennium_common-kernel/commit/84af071436120ecbe9a60e6975460f251215f9ca
+   * lineage/hudson
+82331a0 Regenerate device dependency mappings
 
    * packages/apps/Jelly
 7678330 Jelly: Desktop shortcuts
@@ -55,66 +54,14 @@ d3cd9ae tanzanite-kernel: Update Yuuka Prebuilt Kernel - From: https://github.co
      08-16-2026
 ====================
 
-   * kernel/motorola/sm6375
-263b47f4c1c5 Revert more broken sound/bluetooth files to lineage-23.2
-
-   * lineage/hudson
-82331a0 Regenerate device dependency mappings
-
-   * lineage/mirror
-16b51f5 Updated lineage-minimal to 16-Aug-2026 06:02 UTC
-
    * lineage/scripts
 6556196 lineage-priv-template: Check apexes in `*/apex` instead of `obj`
-9024f8d lineage-priv-template: Add com.android.hardware.drm.clearkey
-
-   * lineage/wiki
-d887f9c6 wiki: signing_builds: Add com.android.hardware.drm.clearkey
-6b2be946 wiki: b0s/g0s/r0s: 3x -> 3 x
-87eef6ed wiki: b0s/g0s/r0s: Mark as not unlockable
-
-   * packages/apps/SetupWizard
-15d7d4a SetupWizard: Remove unused Factory Reset trigger code
-
-   * vendor/lineage
-b208951 vendor: build F-Droid XML
-
-====================
-     08-15-2026
-====================
-
-   * device/oneplus/dre
-9c4c166 chararom: implement dynamic OxygenOS version reporting
-
-   * frameworks/base
-2c30612e3a57 SystemUI: Add panic button to power menu and QS tiles
-
-   * hardware/motorola
-7cf09f9 sepolicy: Label display node used by thermal-engine
-
-   * lineage-sdk
-e85eaa46 lineage-sdk: remove hwparam.json
-
-   * lineage/hudson
-1cec7d4 hudson: Add Galaxy S22 (Exynos) Devices
-
-   * lineage/wiki
-dca0a19d wiki: Add Galaxy S22 (Exynos) Devices
 
    * packages/apps/DeskClock
 519341282 Automatic translation import
 
-   * packages/apps/GameSpace
-ca3a15a New translations (#158)
-
-   * packages/apps/Jelly
-8bf990f Jelly: Add setting to toggle WebView debugging
-
-   * packages/apps/Settings
-78270d9da13 Settings: Duress: Add preference to security dashboard
-
-   * packages/resources/apps
-946a384 New translations (#6)
+   * packages/apps/SetupWizard
+15d7d4a SetupWizard: Remove unused Factory Reset trigger code
 
    * vendor/crowdin
 a35ba05 Automatic translation import
@@ -123,42 +70,43 @@ a35ba05 Automatic translation import
 cbbc60a Automatic translation import
 
 ====================
+     08-15-2026
+====================
+
+   * frameworks/base
+2c30612e3 SystemUI: Add panic button to power menu and QS tiles
+
+   * lineage-sdk
+e85eaa4 lineage-sdk: remove hwparam.json
+
+   * packages/apps/CharaTweaks
+ecc8a63 PowerMenuActions: Add panic button toggle
+
+   * packages/apps/EmergencyButton
+e93455a Update README for CharaROM fork
+
+   * packages/apps/GameSpace
+ca3a15a New translations (#158)
+
+   * packages/apps/Settings
+78270d9 Settings: Duress: Add preference to security dashboard
+
+   * packages/apps/TriggerResponse
+ef96531 Update README for CharaROM fork
+
+   * packages/resources/apps
+946a384 New translations (#6)
+
+====================
      08-14-2026
 ====================
 
    * external/exfatprogs
 de8ba66 Merge tag '1.4.3' of https://github.com/exfatprogs/exfatprogs into lineage-23.2
-a37d327 exfatprogs: release 1.4.3 version
-4f92594 libexfat: avoid overflow in file size calculation
-
-   * lineage-sdk
-59a7cd50 PowerMenuConstants: Add panic action
-
-   * packages/apps/CharaTweaks
-ecc8a634 PowerMenuActions: Add panic button toggle
-
-   * packages/apps/EmergencyButton
-e93455a Update README for CharaROM fork
-
-   * packages/apps/Settings
-0538d64da80 Settings: Duress: Attempt to get Duress settings to appear (-2)
-211393608c0 Settings: Duress: Attempt to get Duress settings to appear
-1f25c26775f Settings: Add duress password management UI
-
-   * packages/apps/TriggerResponse
-ef96531 Update README for CharaROM fork
 
 ====================
      08-13-2026
 ====================
-
-   * lineage/hudson
-1635a87 Regenerate device dependency mappings
-
-   * lineage/wiki
-c324bd7a wiki: Add peripherals sort validator
-f3e2ee73 wiki: gts4lv/gts4lvwifi: Update peripherals
-54ffce7c wiki: odin_m0/odin_m2: Sort peripherals
 
    * vendor/qcom/opensource/vibrator
 afe7232 vibrator: Add support for drv260x:haptics input device
@@ -167,89 +115,28 @@ afe7232 vibrator: Add support for drv260x:haptics input device
      08-12-2026
 ====================
 
-   * external/prebuiltapks
-77c622a prebuilts: Add back ESpeakNG
-8b63f51 prebuilts: drop eSpeakNG and refactor common.mk
-
    * hardware/qcom-caf/sm8450-6.6/audio/pal
-8342f6301 ResourceManager: Move some logging to verbose
+8342f630 ResourceManager: Move some logging to verbose
 
    * hardware/qcom-caf/sm8450/audio/pal
-c6f8e48dd ResourceManager: Move some logging to verbose
+c6f8e48d ResourceManager: Move some logging to verbose
 
    * hardware/qcom-caf/sm8550/audio/pal
-39e763ea1 ResourceManager: Move some logging to verbose
+39e763ea ResourceManager: Move some logging to verbose
 
    * hardware/qcom-caf/sm8650/audio/pal
-9cad645e8 ResourceManager: Move some logging to verbose
+9cad645e ResourceManager: Move some logging to verbose
 
    * hardware/qcom-caf/sm8750/audio/pal
-c0f825a23 ResourceManager: Move some logging to verbose
-
-   * lineage/mirror
-d5211ce Updated to 13-Aug-2026 00:02 UTC
-62495e8 Updated lineage-minimal to 12-Aug-2026 18:02 UTC
-1c14b8c Updated to 12-Aug-2026 06:01 UTC
-
-   * packages/apps/Settings
-58f3499cc24 Settings: Fix up System Sound Settings and Connectivity Check Strings
+c0f825a2 ResourceManager: Move some logging to verbose
 
 ====================
      08-11-2026
 ====================
 
-   * device/xiaomi/tanzanite
-bf51a54 tanzanite: Add Chaos Engineer Identifier
-20dbc59 tanzanite: Raise the frequency of sampling regions in SurfaceFlinger - This is done to attain precise 120Hz for frame fluidity.
-8360c24 tanzanite: Allow games to use 120FPS
-ca5a1e2 tanzanite: Hand back GPU Frequency control to gpufreqv2 * Based on https://github.com/moto-common/android_device_motorola_mt6879-common/blob/14/rootdir/vendor/etc/powerhint.json and https://github.com/yaap/device_motorola_cancunf/blob/fifteen/configs/powerhint.json for SEPolicy rules * Adapted for MT6789
-e3a14ca tanzanite: Add GKI source tree on README.md - Needed requirement for using custom kernels on CharaROM
-20e1925 tanzanite: Add more SF properties
-
-   * device/xiaomi/tanzanite-kernel
-ef52e7b tanzanite-kernel: Update Yuuka Prebuilt Kernel - From: https://github.com/MillenniumOSS/android_device_millennium_common-kernel/commit/40186c4f435032c4ec05472b5f2385d5c274fad7
-
    * external/wpa_supplicant_8
 73b1074 nl80211: Skip NL80211_WPA_VERSION_3 for MediaTek devices
 
-   * kernel/oneplus/sm4350
-b3f963d2effe fix: revert broken backports and fix NOATIME indentation
-
-   * lineage/wiki
-ebc1390b Correct a typo in `pages/emulator.md`
-
-   * packages/apps/CharaTweaks
-266e3ac6 CharaTweaks: drawables: ic_team: remove tag left over from scaling script
-2cbc4da7 CharaTweaks: Add Blog and Team links
-
-   * packages/apps/Settings
-0ae28117485 Settings: Rename Advanced Sounds to System Sounds
-89d7ea5e38c hide Google Play system update version
-2d642939458 display full build info
-
    * system/core
 e807540 init.rc: tune dirty data writebacks
-
-====================
-     08-10-2026
-====================
-
-   * hardware/lineage/interfaces
-805d253 health: Fix charging deadline node assignment
-
-   * lineage-sdk
-611cd53c Remove setting loading for FORCE_SHOW_NAVBAR
-252608d6 LineageSettingsProvider: Add missing default values
-4e52a6ba Allow user switching when system user locked
-2314fc39 Restrict USB off by default in debuggable builds
-250959e4 User timeout feature II
-1ef341c7 Add preference key for maximum failed passwords for wipe, secure
-a8ce072e Add preference key for disabling user switcher on keyguard, secure
-70677979 Add DEFAULT_RESTRICT_NETWORK_DATA setting
-
-   * packages/apps/Settings
-b1a472e3e52 fixup! Settings: Add toggle for Smart 5G [2/2]
-3f832cad224 Settings: Add toggle for Smart 5G [2/2]
-41c12e689d3 Settings: Re-organize sound settings page
-8240f4bd896 Settings: DevicePicker: Adapt to S style
 
