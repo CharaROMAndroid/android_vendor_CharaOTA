@@ -2,9 +2,6 @@
      08-22-2026
 ====================
 
-   * lineage/hudson
-3c395be hudson: Drop OFFICIAL support for Mi8917 & Mi8937 & Mi439
-
    * lineage/mirror
 266a504 Updated to 22-Aug-2026 00:02 UTC
 
@@ -15,8 +12,8 @@ dd249f1 FR: Update APN for SFR
      08-21-2026
 ====================
 
-   * device/millennium/common-kernel
-1d8a02c common-kernel: Update Yuuka/Chihiro Prebuilts
+   * lineage/hudson
+3c395be hudson: Drop OFFICIAL support for Mi8917 & Mi8937 & Mi439
 
    * lineage/wiki
 b2d80cf6 wiki: devices: Drop OFFICIAL support for Mi8917 & Mi8937 & Mi439
@@ -24,6 +21,9 @@ b2d80cf6 wiki: devices: Drop OFFICIAL support for Mi8917 & Mi8937 & Mi439
 ====================
      08-20-2026
 ====================
+
+   * device/millennium/common-kernel
+1d8a02c common-kernel: Update Yuuka/Chihiro Prebuilts
 
    * device/xiaomi/tanzanite
 aac85ab fixup! tanzanite: Switch back to prebuilt IMS stack
@@ -41,6 +41,13 @@ ff107c4 vibratorOL: Enforce min/max timeout for LDO vibrator motor
      08-19-2026
 ====================
 
+   * vendor/xiaomi/tanzanite
+93eb857 tanzanite: Sync with device tree
+
+====================
+     08-18-2026
+====================
+
    * build/soong
 f01c2ae Merge pull request #1 from cinnamonbunni/hershey
 
@@ -49,13 +56,6 @@ f01c2ae Merge pull request #1 from cinnamonbunni/hershey
 
    * device/xiaomi/tanzanite-kernel
 6c9b5e5 tanzanite-kernel: Remove Image.gz * Since we use the Millennium Common Kernel now, there is no more use in it
-
-   * vendor/xiaomi/tanzanite
-93eb857 tanzanite: Sync with device tree
-
-====================
-     08-18-2026
-====================
 
 ====================
      08-17-2026
@@ -99,17 +99,11 @@ e85eaa4 lineage-sdk: remove hwparam.json
    * packages/apps/CharaTweaks
 ecc8a63 PowerMenuActions: Add panic button toggle
 
-   * packages/apps/EmergencyButton
-e93455a Update README for CharaROM fork
-
    * packages/apps/GameSpace
 ca3a15a New translations (#158)
 
    * packages/apps/Settings
 78270d9 Settings: Duress: Add preference to security dashboard
-
-   * packages/apps/TriggerResponse
-ef96531 Update README for CharaROM fork
 
    * packages/resources/apps
 946a384 New translations (#6)
@@ -120,6 +114,12 @@ ef96531 Update README for CharaROM fork
 
    * external/exfatprogs
 de8ba66 Merge tag '1.4.3' of https://github.com/exfatprogs/exfatprogs into lineage-23.2
+
+   * packages/apps/EmergencyButton
+e93455a Update README for CharaROM fork
+
+   * packages/apps/TriggerResponse
+ef96531 Update README for CharaROM fork
 
 ====================
      08-13-2026
