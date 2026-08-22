@@ -1,4 +1,27 @@
 ====================
+     08-22-2026
+====================
+
+   * lineage/hudson
+3c395be hudson: Drop OFFICIAL support for Mi8917 & Mi8937 & Mi439
+
+   * lineage/mirror
+266a504 Updated to 22-Aug-2026 00:02 UTC
+
+   * vendor/apn
+dd249f1 FR: Update APN for SFR
+
+====================
+     08-21-2026
+====================
+
+   * device/millennium/common-kernel
+1d8a02c common-kernel: Update Yuuka/Chihiro Prebuilts
+
+   * lineage/wiki
+b2d80cf6 wiki: devices: Drop OFFICIAL support for Mi8917 & Mi8937 & Mi439
+
+====================
      08-20-2026
 ====================
 
@@ -8,14 +31,11 @@ aac85ab fixup! tanzanite: Switch back to prebuilt IMS stack
    * external/prebuiltapks
 5ee4550 prebuilts: Disable Android Auto stub
 
-   * lineage/mirror
-e7bd58c Updated to 20-Aug-2026 00:02 UTC
-
-   * lineage/wiki
-7c1a3c95 wiki: device_build_before_init: Add erofs-utils to dependencies
-
    * vendor/lineage
 e44b266 envsetup: eat our package, not Lineage's
+
+   * vendor/qcom/opensource/vibrator
+ff107c4 vibratorOL: Enforce min/max timeout for LDO vibrator motor
 
 ====================
      08-19-2026
@@ -37,15 +57,12 @@ f01c2ae Merge pull request #1 from cinnamonbunni/hershey
      08-18-2026
 ====================
 
-   * device/millennium/common-kernel
-14d2ded common-kernel: Update Yuuka/Chihiro prebuilts
-
 ====================
      08-17-2026
 ====================
 
-   * lineage/hudson
-82331a0 Regenerate device dependency mappings
+   * lineage/crowdin
+c0d3769 config: Update ParanoidGlyph path
 
    * packages/apps/Jelly
 7678330 Jelly: Desktop shortcuts
@@ -107,36 +124,4 @@ de8ba66 Merge tag '1.4.3' of https://github.com/exfatprogs/exfatprogs into linea
 ====================
      08-13-2026
 ====================
-
-   * vendor/qcom/opensource/vibrator
-afe7232 vibrator: Add support for drv260x:haptics input device
-
-====================
-     08-12-2026
-====================
-
-   * hardware/qcom-caf/sm8450-6.6/audio/pal
-8342f630 ResourceManager: Move some logging to verbose
-
-   * hardware/qcom-caf/sm8450/audio/pal
-c6f8e48d ResourceManager: Move some logging to verbose
-
-   * hardware/qcom-caf/sm8550/audio/pal
-39e763ea ResourceManager: Move some logging to verbose
-
-   * hardware/qcom-caf/sm8650/audio/pal
-9cad645e ResourceManager: Move some logging to verbose
-
-   * hardware/qcom-caf/sm8750/audio/pal
-c0f825a2 ResourceManager: Move some logging to verbose
-
-====================
-     08-11-2026
-====================
-
-   * external/wpa_supplicant_8
-73b1074 nl80211: Skip NL80211_WPA_VERSION_3 for MediaTek devices
-
-   * system/core
-e807540 init.rc: tune dirty data writebacks
 
