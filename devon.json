@@ -1,0 +1,30 @@
+{
+    "response": [
+        {
+            "maintainer": "cinnamonbunni",
+            "oem": "Motorola",
+            "device": "Moto G32",
+            "filename": "CharaROM-v1.0-DATE-RELEASE-Android16-Beta-devon.zip",
+            "download": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases",
+            "timestamp": 1784440470,
+            "md5": "5f3e725a81b9959fa7b28227b62dedf2",
+            "sha256": "17850ee26171eedf88888682d2b512fd1038257ae178af608eaad7e06be563cd",
+            "size": 1543304472,
+            "version": "1.0",
+            "os_patch_level": "2026-08-01",
+            "os_sdk_level": 36,
+            "buildtype": "Release",
+            "forum": "https://chararom.xyz",
+            "gapps": "https://bitgapps.io/",
+            "firmware": "https://chararom.xyz",
+            "modem": "https://chararom.xyz",
+            "bootloader": "https://chararom.xyz",
+            "paypal": "https://paypal.me/bunnypad",
+            "telegram": "https://t.me/dtpeakgroup",
+            "stoat": "https://stt.gg/TmpdFStp",
+            "dt": "https://github.com/cinnamonbunni/device_motorola_devon",
+            "common-dt": "https://github.com/cinnamonbunni/device_motorola_sm6225-common",
+            "kernel": "https://github.com/DeterminationPeak/kernel_motorola_sm6225"
+        }
+    ]
+}
