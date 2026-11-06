@@ -6,7 +6,7 @@
             "device": "Redmi Note 8",
             "filename": "CharaROM-v1.0-20260719-TESTRELEASE-Android16-Beta-ginkgo.zip",
             "download": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/beta3/CharaROM-v1.0-20260719-TESTRELEASE-Android16-Beta-ginkgo.zip",
-            "timestamp": 1784440470,
+            "timestamp": 1784440909,
             "md5": "a7a4299619618ff880d87002f4a3d781",
             "sha256": "5ebf09006ddd051f9193d9467fb53558083ebb6f4399fadf301e13f5774a1489",
             "size": 1490588513,
@@ -23,9 +23,9 @@
             "paypal": "https://chararom.xyz/",
             "telegram": "https://t.me/bunnypaddev",
             "stoat": "https://stt.gg/TmpdFStp",
-            "dt": "https://chararom.xyz/",
-            "common-dt": "https://chararom.xyz/",
-            "kernel": "https://chararom.xyz/"
+            "dt": "https://github.com/LineageOS/android_device_xiaomi_ginkgo/tree/lineage-23.2",
+            "common-dt": "https://github.com/LineageOS/android_device_xiaomi_sm6125-common/tree/lineage-23.2",
+            "kernel": "https://github.com/LineageOS/android_kernel_xiaomi_sm6125/tree/lineage-23.2"
         }
     ]
 }
