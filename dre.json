@@ -18,7 +18,7 @@
             "firmware": "https://github.com/elginsk8r/oplus_archive/releases/download/DE2117_11_C.37/",
             "modem": "https://github.com/elginsk8r/oplus_archive/releases/download/DE2117_11_C.37/",
             "bootloader": "https://github.com/elginsk8r/oplus_archive/releases/download/DE2117_11_C.37/",
-            "recovery": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/recovery/dre_hershey_recovery_04222026.zip",
+            "recovery": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/recovery/CharaROM-v2.0-20261111-RELEASE-Android17-Alpha-dre-recovery.zip",
             "paypal": "https://paypal.me/bunnypad",
             "telegram": "https://t.me/bunnypaddev",
             "dt": "https://github.com/CharaROMAndroid/android_device_oneplus_dre",

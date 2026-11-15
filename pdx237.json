@@ -18,7 +18,7 @@
             "firmware": "",
             "modem": "",
             "bootloader": "",
-            "recovery": "https://sourceforge.net/projects/crdroid/files/pdx237/12.x/recovery/",
+            "recovery": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/recovery/CharaROM-v2.0-20261113-RELEASE-Android17-Alpha-pdx237-recovery.zip",
             "paypal": "https://ko-fi.com/eepymeowers",
             "telegram": "https://t.me/norasroms_support",
             "dt": "https://github.com/crdroidandroid/android_device_sony_pdx237",
