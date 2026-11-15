@@ -18,7 +18,7 @@
             "firmware": "https://mirrors-obs-1.lolinet.com/firmware/lenomola/2022/milanf/official/",
             "modem": "https://mirrors-obs-1.lolinet.com/firmware/lenomola/2022/milanf/official/",
             "bootloader": "https://mirrors-obs-1.lolinet.com/firmware/lenomola/2022/milanf/official/",
-            "recovery": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/recovery/CharaROM-20260402-recovery-milanf.zip",
+            "recovery": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/recovery/CharaROM-v2.0-20261112-RELEASE-Android17-Alpha-milanf-recovery.zip",
             "paypal": "https://paypal.me/bunnypad",
             "telegram": "https://t.me/bunnypaddev",
             "dt": "https://github.com/CharaROMAndroid/android_device_motorola_milanf",

@@ -18,7 +18,7 @@
             "firmware": "https://mirrors-obs-1.lolinet.com/firmware/lenomola/2025/mona/official/",
             "modem": "https://mirrors-obs-1.lolinet.com/firmware/lenomola/2025/mona/official/",
             "bootloader": "https://mirrors-obs-1.lolinet.com/firmware/lenomola/2025/mona/official/",
-            "recovery": "",
+            "recovery": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/recovery/CharaROM-v2.0-20261113-RELEASE-Android17-Alpha-mona-recovery.zip",
             "paypal": "https://paypal.me/bunnypad",
             "telegram": "https://t.me/bunnypaddev",
             "dt": "https://git.chararom.xyz/CharaROMAndroid/android_device_motorola_mona",
