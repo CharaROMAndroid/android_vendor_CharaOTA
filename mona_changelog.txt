@@ -1,0 +1,63 @@
+====================
+     11-13-2026
+====================
+
+   * frameworks/base
+bf71ce37bdc3 trickystore: read legacy Keymaster manifests outside CTS
+11a7608cbf0d trickystore: detect legacy Keymaster before launch API fallback
+ef6232463c9c SystemUI: support independent SIM PIN and PUK keypad scrambling
+e9296ecd65a8 Merge server-side TrickyStore isolation with current attestation behavior
+e6d33227f8c1 FontSanitizer: transport bounded snapshots through protected shared memory
+
+   * packages/apps/Settings
+7a359d1de2b Settings: remove auto-off debugging picker, fix native debug entry in more security
+39e01ff50b9 Settings: make native debugging an explicit compatibility choice
+34c9b59fc53 Add setting for timeout-reboot
+f40c9573fe0 Settings: expose SIM PIN scrambling on both SIM protection screens
+70322d0a2ea Settings: warn about private space hiding limitations
+
+   * lineage-sdk
+6af67bbb LineageSettings: add independent SIM PIN scrambling setting
+
+   * packages/apps/CharaTweaks
+f4306c5f fonts: Track reboot when custom font clear succeeds but overlay switch fails
+fb3c6443 TrickyStore: Add keybox import helper
+da7c5106 Merge crDroid font picker API while preserving isolated sanitization
+5faffad9 fonts: Track reboot when custom font clear succeeds but overlay switch fails
+0364082d TrickyStore: Add keybox import helper
+
+   * device/motorola/mona
+28949a9 mona: Drop duplicate Goodix fingerprint 2.1 blob
+2917008 mona: Drop PowerShare (no wireless TX hardware)
+1329980 mona: Add UDFPS surfaceflinger extension and enable UDFPS pickers
+3b864b0 mona: Build android.hardware.biometrics.fingerprint-service.moto
+4f41893 mona: Enable display cutout protection
+d53ae73 mona: Adjust power button position
+0af4e5e mona: Update udfps props
+c678574 mona: Build com.motorola.hardware.biometric.fingerprint-V2-ndk
+
+   * device/motorola/sm6475-common
+3772d461 sm6475-common: Rename MotoNrEnabler to MotoExtTelephony
+4c25b1c2 Revert "sm6475-common: Enable non-protected VM support in bootconfig"
+2a9d3d5b sm6475-common: Enable non-protected VM support in bootconfig
+e22ebb8e sm6475-common: Allow getppid in codec2 seccomp policy
+d2d9bbbc sm6475-common: Allow lseek in syshealthmon seccomp policy
+18c80e87 sm6475-common: vintf: Allow fingerprint AIDL v3 and Moto wrapper
+37fec3b5 sm6475-common: Remove unused libheif dependency from WFD
+200403b9 sm6475-common: sepolicy: Allow power HAL to access WALT tunables
+
+   * vendor/motorola/mona
+08d7b9c mona: Update blobs for Android 17 (W1VAS36.62-22-16-1-18)
+fb73e7a mona: Keep imported firmware as regular Git blobs
+dcb723f mona: Drop MotCamera5
+dd272eb mona: import extracted stock vendor files and firmware
+
+   * vendor/motorola/sm6475-common
+665c9b2 sm6475-common: Allow getppid and lseek in seccomp policies
+0408e85 sm6475-common: Update WFD blobs for Android 17
+3257cf0 sm6475-common: Fix WFD dependencies for Android 17
+dba37aa sm6475-common: Import stock IPACM and servicetracker
+7723b3d sm6475-common: Strip _llseek from codec2 ext seccomp policy
+724aaef sm6475-common: ship stock bluetooth audio V2 NDK lib
+678c6c8 sm6475-common: import mona stock vendor blobs
+
