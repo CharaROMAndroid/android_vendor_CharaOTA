@@ -10,7 +10,7 @@
             "md5": "b82c9ca0bbef90a28ba1efd8c6837a94",
             "sha256": "89e802f6f16611b72295240dc8b313a812558555c2ce4b5251a3782874fe5744",
             "size": 1572808307,
-            "version": ".",
+            "version": "1.0",
             "os_patch_level": "2026-08-01",
             "os_sdk_level": 36,
             "buildtype": "Release",
