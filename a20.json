@@ -1,0 +1,29 @@
+{
+    "response": [
+        {
+            "maintainer": "Chara",
+            "oem": "Samsung",
+            "device": "Galaxy A20 (A205X)",
+            "filename": "CharaROM-v2.0-20261118-EXPERIMENTAL-Android17-Alpha-a20.zip",
+            "download": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/truffles-a2/CharaROM-v2.0-20261118-EXPERIMENTAL-Android17-Alpha-a20.zip",
+            "timestamp": 1794975323,
+            "md5": "7ffa706ec1f2b918c896a63ec5c9fcec",
+            "sha256": "2d5f8901d7e2e0562f59f6553c2ad6a0e0dad264c241bfbe4557e33953a966bc",
+            "size": 1260910075,
+            "version": "2.0",
+            "os_patch_level": "2026-11-01",
+            "os_sdk_level": 37,
+            "buildtype": "EXPERIMENTAL",
+            "forum": "chararom.xyz",
+            "firmware": "https://samfw.com/firmware/SM-A205F/",
+            "modem": "https://samfw.com/firmware/SM-A205F/",
+            "bootloader": "https://samfw.com/firmware/SM-A205F/",
+            "recovery": "https://github.com/CharaROMAndroid/android_vendor_CharaOTA/releases/download/recovery/CharaROM-v2.0-20261118-EXPERIMENTAL-Android17-Alpha-a20-recovery.img",
+            "paypal": "https://paypal.me/bunnypad",
+            "telegram": "https://t.me/bunnypaddev",
+            "dt": "https://github.com/CharaROMAndroid/android_device_samsung_a20/",
+            "common-dt": "https://github.com/CharaROMAndroid/android_device_samsung_exynos7885-common/",
+            "kernel": "https://github.com/CharaROMAndroid/kernel_samsung_exynos7885/tree/lineage-24.0"
+        }
+    ]
+}

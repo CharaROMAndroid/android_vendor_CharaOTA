@@ -1,0 +1,453 @@
+====================
+     11-18-2026
+====================
+
+   * device/lineage/sepolicy
+779cda6 sepolicy: restrict fingerprint navigation property to platform setters
+a334bbf Fingerprint navigation: add device-opt-in live toggle, default off
+
+   * device/samsung/a20
+57cc9cf a20: identify Chara as Chaos Maintainer
+b27f0c0 Fingerprint navigation: add device-opt-in live toggle, default off
+8d971d6 blur: require explicit device capability and hide unsupported controls
+afb9024 a20: prioritize device overlays over common defaults
+9fb5241 a20: enable device-local background blur test
+857b2ba a20: allow camera HAL to allocate legacy ION buffers
+02cb4cb a20: allow boot animation to read legacy ION
+e3505ba a20: select legacy BPF variants and skip optional shader priming
+e762775 a20: restore device-local legacy ION access
+5760bb6 a20: add scsc wpa_supplicant_lib soong namespace
+
+   * device/samsung/exynos7885-common
+d7c338c exynos7885: separate recovery fstab without file encryption
+8b5fb4d exynos7885: mount encrypted data during late-fs
+7bbc582 blur: require explicit device capability and hide unsupported controls
+b2cdc86 exynos7885-common: enable legacy v1 file-based encryption
+
+   * frameworks/base
+e0b116a8342d blur: require explicit device capability and hide unsupported controls
+
+   * hardware/samsung
+630b2d6 Fingerprint navigation: add device-opt-in live toggle, default off
+
+   * hardware/samsung-ext/interfaces
+c0b5e4a Freeze Samsung flashlight AIDL V2
+
+   * kernel/samsung/exynos7885
+bc8b1794aefd security: enable stacked Yama ptrace restrictions
+cd32c4208c4a bpf: accept common socket pointers in socket storage helpers
+2fd1c7447cd2 bpf: restore upstream ringbuf helper ABI and netd dispatch paths
+
+   * packages/apps/CharaTweaks
+a35a154a Fingerprint navigation: add device-opt-in live toggle, default off
+cda7ae28 blur: require explicit device capability and hide unsupported controls
+
+   * vendor/lineage
+5dd8aed9 Fingerprint navigation: add device-opt-in live toggle, default off
+ee3163b3 blur: require explicit device capability and hide unsupported controls
+
+====================
+     11-17-2026
+====================
+
+   * frameworks/base
+684137f980ce build(deps-dev): bump brace-expansion
+
+====================
+     11-16-2026
+====================
+
+   * device/samsung/exynos7885-common
+539d5a3 exynos7885-common: package current Bluetooth DID config
+
+   * packages/modules/Wifi
+4963e83f06 Wifi: use SDK-visible user handle lookup for package broadcasts
+
+====================
+     11-15-2026
+====================
+
+   * device/samsung/a20
+61bbd91 a20: temporarily comment out unavailable FM packages
+fa5dce8 a20: opt in persisted legacy hotspot transition repair
+
+   * external/tinyalsa
+82bc092 mixer: preserve pending events across control refresh
+3280039 mixer: refresh dynamic controls without invalidating group pointers
+
+   * packages/apps/Launcher3
+fb2032fbc8 Launcher: declare biometric permission for protected apps authentication
+
+   * packages/modules/Wifi
+08b2005731 Wifi: opt in legacy persisted transition hotspot migration
+
+   * system/vold
+30f3d03 vold: tolerate only unsupported project-id operations during app setup
+
+   * vendor/samsung/a20
+5b47b5b a20: drop duplicate GNSS init copy
+
+====================
+     11-14-2026
+====================
+
+   * device/motorola/sm6475-common
+3772d461 sm6475-common: Rename MotoNrEnabler to MotoExtTelephony
+
+====================
+     11-13-2026
+====================
+
+   * frameworks/base
+bf71ce37bdc3 trickystore: read legacy Keymaster manifests outside CTS
+11a7608cbf0d trickystore: detect legacy Keymaster before launch API fallback
+
+====================
+     11-12-2026
+====================
+
+   * frameworks/base
+6ed5d3e616f0 Restore pre-pass ROM and root package visibility policy
+f2c945c26746 Remove foreground app ADB shutdown and USB fallback policy
+
+   * hardware/motorola
+ee9ef4a Reland "MotoNrEnabler: Rename to MotoExtTelephony"
+dea36d4 MotoNrEnabler: Add legacy sim switching
+a873249 Drop Egistec fingerprint HIDL interface and UDFPS handler
+
+   * packages/apps/Settings
+ba435916063 Revert "Settings: retain unused ADB strings for resource ID stability"
+0905f23bec0 Settings: retain unused ADB strings for resource ID stability
+78cef2b5dc9 Settings: drop lifecycle observer for NativeDebugPreferenceController
+7a359d1de2b Settings: remove auto-off debugging picker, fix native debug entry in more security
+
+   * packages/apps/TriggerResponse
+91ab27e TriggerResponse: stop injecting duplicate Panic settings entry into Security
+
+====================
+     11-11-2026
+====================
+
+   * device/lineage/sepolicy
+beca61e sepolicy: label persist.native_debug for Settings toggle
+
+   * frameworks/base
+677f4c42ec1e Replace ADB visibility hiding with foreground safety shutdown
+df989299d82c pm: honor full inventory access in automatic package catalog filtering
+8cfd54dfe2d1 Fix ADB property clearing and align selected-app USB presentation
+
+   * packages/apps/Settings
+ce6487b04e6 Settings: correct auto-off debugging explanation text
+4fa6bec28fd Settings: add auto-off debugging app picker and USB debugging tile
+bd1272261b1 Settings: use shared PIF app picker UI for ADB and VPN privacy
+9fea7b23666 Settings: keep VPN privacy entry visible and allow state-hiding fragments
+
+====================
+     11-10-2026
+====================
+
+   * frameworks/base
+ccdc4d74ceec frameworks: prototype per-app ADB state privacy without disabling debugging
+de6434fb4f72 api: baseline unflagged ConnectivityUtil module API
+e7d32a7e4340 api: baseline unflagged GOS broadcast APIs and OP_NONE
+2ddb41d1ce0e extend the list of exported sendBroadcast() APIs
+f43ccb2fbde7 Revert "Hide unused ConnectivityUtil module API"
+
+   * hardware/lineage/compat
+4865929 libnetmgrportutils: Shim ip_local_unbindable_ports for 6.1+
+
+   * packages/apps/Messaging
+030df11e Messaging: accept audio attachment long clicks in processClick()
+
+   * packages/apps/Settings
+48347efcc78 Settings: add experimental per-app ADB state privacy picker
+cbfe1df97e8 Settings: add per-app VPN state privacy picker
+
+   * packages/modules/Connectivity
+0414623cba Connectivity: use public user APIs in VPN state concealment
+7e5ac9a944 Connectivity: conceal VPN status APIs for selected per-user apps
+532c40aade ct: use method context in CertificateTransparencyDownloader
+
+   * packages/resources/apps
+67d5108 New Crowdin updates (#14)
+acc018a resources: Add dolby atmos strings
+
+====================
+     11-09-2026
+====================
+
+   * android
+a772ad7 manifest: fetch CharaROM repos from GitHub
+8560dca manifest: fetch CharaROM repos from local Forgejo
+0d2d9b8 manifest: fetch CharaROM repos from Forgejo
+7be455b Revert "manifest: track CharaROM Oplus hardware fork"
+142d656 manifest: track CharaROM Oplus hardware fork
+e8ae909 manifest: track CharaROM hardware interfaces fork
+515e9ad manifest: use CharaROM vold fork for storage permission and lock fixes
+
+   * bootable/recovery
+b47c14da recovery: Preserve package verification after upstream replay
+91c1d13b recovery: Modernize menu with Material 3 segmented cards
+3fe85930 minui: Stop compositing directly into the framebuffer
+1833f173 recovery: Do not print switch slot info without actually switching a slot
+ddafff3e recovery: Skip verifying packages altogether
+f817e92c minui: Skip destination reads for transparent & opaque fills
+
+   * build/make
+e13414214a build: Prevent lineage_ prefix in vendor props
+
+   * frameworks/av
+bb10a85db8 audio: Remove UID check from per-app volume commands
+6b7150f13c av: support per-app volume [1/3]
+a23a43a018 Fix stack buffer overflow in LWOmxNode::getParameter and getConfig
+87444ab57a Fix unbounded recursion in MPEG4Source::parseChunk
+a26c556454 Fix stack-buffer-overflow in StagefrightMetadataRetriever
+fae8a03b09 FrameDecoder: Add checks for parameters from format.
+8ec5f254cc Fix heap OOB read in C2SoftApvDec
+1793a9987e audiopolicy: return early when custom manager library is absent
+4458770a1a mtp: fall back to Samsung legacy gadget ioctls
+5c0cfc1821 MediaSync: fix nullptr dereference in onAbandoned_l on output death
+fa6a72e965 MediaSync: remove InputListener death recipient dead code
+ffa1863449 MediaSync: fix nullptr dereference when detachNextBuffer fails
+
+   * frameworks/base
+3b3e37cdb357 DeviceConfigUtils: preserve equals in values and compare strings by content
+2e2b649caf08 Frameworks: own ROM-wide user, privacy and SystemUI policy
+24c337b94fa9 SettingsProvider: own CharaROM privacy and UI defaults
+f9fd4c35a9a3 Hide unused ConnectivityUtil module API
+ce7eb54f8ce4 Revert "SystemUI: Remove alarm from statusbar icon blocklist"
+795a45ed1227 Revert "SystemUI: fix alarm icon status bar padding"
+c02ce49c01c5 SystemUI: simplify lockscreen media transition filtering
+1cbc0a961971 implement deadzone for back gesture
+8c2ff85661c6 EventLog: Disable event writing in production builds
+8d94a2e2545e When 'Show media notifications on lock screen' is turned off, pressing the power button to wake the screen while the device is locked causes the media notification to flash briefly.
+ab842eb92349 fix upstream RecoverySystem.verifyPackage vulnerability
+29457c55e903 SystemUI: run scroll capture tile handling on main thread
+6318deece1c1 UsbManagerInternalImpl: fix handling of enableUsbDataInternal() value
+6e3654ffd349 UsbOperationInternal: add missing mOperationComplete check
+22e0b13a4f33 SystemUI: fix alarm icon status bar padding
+661920a1acee SystemUI: Remove alarm from statusbar icon blocklist
+37f0a1cd0d24 Merge commit 'c5f96fb636508ad02b8f583cb4e5fcc7fd3abe4e' into land-truffles-20261108
+c5f96fb63650 PackageManager: add per-user caller app-list privacy policy
+ef6232463c9c SystemUI: support independent SIM PIN and PUK keypad scrambling
+e9296ecd65a8 Merge server-side TrickyStore isolation with current attestation behavior
+4d073fc907ed Merge TEE simulator MGF and Android 17 version ports
+
+   * hardware/interfaces
+39132c6c3c health: unroll power supply filter for legacy BPF verifiers
+
+   * hardware/oplus
+6c9548b Merge crDroid 17.0 upstream into truffles
+
+   * hardware/samsung_slsi/scsc_wifibt/wifi_hal
+5f2e142 wifi_hal: read link layer stats peers at the driver's size
+
+   * kernel/motorola/sm6375
+fc0bb10e0173 IPv4: disable IPv4 TTL decrement properly
+5aac22fa1c48 arm64: holi: enable Yama restricted ptrace policy
+0eee11fe095a arm64: holi: restrict unprivileged BPF and kernel log access by default
+f0dc5c7ddd90 net: skbuff: propagate shared-frag marker in skb_zerocopy()
+492a0ca28890 ipv4: validate checksum_start before completing checksum
+71924c9ada87 arm64: configs: holi: allow pressure cgroup support
+cf73de235f69 tls: Fix race condition in tls_sw_cancel_work_tx()
+5c16f64caaad BACKPORT: f2fs: compress: fix UAF of f2fs_inode_info in f2fs_free_dic
+3e66040646f5 disp: msm: sde: dsi: only configure dsc in crtc_commit thread
+49a45d39c68f disp: msm: sde: set possible clones for all encoders
+cabff3558050 disp: msm: sde: add check to avoid multiple active CWB
+88f76e4a4d97 disp: msm: dp: fix double freeing of bridge memory
+dabae4b65d83 BACKPORT: posix-cpu-timers: Prevent UAF caused by non-leader exec() race
+c3372893e663 UPSTREAM: posix-cpu-timers: Fix rearm racing against process tick
+be69ac687e20 BACKPORT: UPSTREAM: posix-cpu-timers: Store a reference to a pid not a task
+d0a18bdef4ff UPSTREAM: posix-cpu-timers: Remove unnecessary locking around cpu_clock_sample_group
+4b1e442e84c2 FROMGIT: HID: logitech-dj: fix wrong detection of bad DJ_SHORT output report
+7fed9112e66d FROMGIT: HID: logitech-dj: Prevent REPORT_ID_DJ_SHORT related user initiated OOB write
+f325104731a1 FROMGIT: HID: logitech-dj: Standardise hid_report_enum variable nomenclature
+bd01a5fbfb89 ANDROID: 16K: skip fault-around in ELF segment padding holes
+1f09094506dd ANDROID: 16K: improve robustness of vma padding logic
+e96f4a84a49a BACKPORT: HID: core: Fix OOB read in hid_get_report for numbered reports
+28998fc87bfc UPSTREAM: HID: core: Add printk_ratelimited variants to hid_warn() etc
+50f7facf280c qcacld-3.0: Add support to set primary STA interface
+0f6a9e554fff qcacld-3.0: Add support to config concurrent dual sta policy
+57098b6c654a qcacld-3.0: Refine interface combinations advertised in wiphy
+
+   * lineage-sdk
+ac9ade3f lineage-sdk: Harden LineageHardwareManager against HAL errors
+f44b7c32 lineage-sdk: LiveDisplay: Don't let HAL failures crash system_server
+366a2adb Add more device key actions
+10bbf3d8 Ship as crDroid based on LOS
+4a80da14 sdk: Make the assist short/long press action configurable
+e7f24224 sdk: Add a cycle ringer mode button action
+d7573f23 sdk: Update button actions list in lineage/res/res/values/config.xml
+154aaa1e sdk: ConnectionSettings: Set attribution tag for BluetoothAdapter
+b67b6e91 Automatic translation import
+59956128 Automatic translation import
+0514fe6a sdk: Fix device actions range
+6af67bbb LineageSettings: add independent SIM PIN scrambling setting
+
+   * packages/apps/CharaTweaks
+c60aa2c5 CharaTweaks: harden app list hiding, drop app performance
+77803816 CharaTweaks: App list hiding UI (BaikalOS-derived), app performance groundwork
+3bdf3f4c Merge reviewed build-host Tweaks history into current font API
+9181a8ef Tweaks: retain local Russian and Polish game spoofing footer translations
+6ec37d0f Tweaks: retain removal of stale Ukrainian application branding
+b91ded74 Tweaks: remove obsolete QuickTap dimensions
+f4306c5f fonts: Track reboot when custom font clear succeeds but overlay switch fails
+fb3c6443 TrickyStore: Add keybox import helper
+da7c5106 Merge crDroid font picker API while preserving isolated sanitization
+
+   * packages/apps/Launcher3
+3311d59a80 fixup! Launcher3: Treat built-in secondary displays like the primary display
+00bf329db9 Launcher3: WallpaperService: Use LauncherPrefs to prevent runtime error at boot
+7c4d7290ea Launcher3: Harden widget picker theme against stale theme IDs
+e5844eb7b7 Launcher3: Apply drawer opacity to stock background
+ac08cee75a Launcher3: Fix NPE when screen reader is active
+c5363413ae fix crash from AllAppsActionManager race condition from user switch
+6961d3d336 fix large screen taskbar folder crash with 3-button nav
+0ebc714ce9 fix home screen accessibility actions not being performed
+
+   * packages/apps/LineageParts
+b3d745b Automatic translation import
+62a3b13 Ship as crDroid based on LOS
+acc79dd LineageParts: Use the configured assist short/long press action
+9dac305 LineageParts: Add a cycle ringer mode button action
+a575e3c LineageParts: Make partial screenshot action translatable
+6c7ccf6 LineageParts: Keep Trust onboarding content clear of actions
+893edb8 Automatic translation import
+dfb36da Automatic translation import
+
+   * packages/apps/Messaging
+7ee4fc57 Messaging: make conversation rows activatable
+
+   * packages/apps/Settings
+590a3a2db3e Settings: add a blur effects switch to Display
+102908059e2 Settings: discard obsolete replay artifacts after history reconciliation
+39e01ff50b9 Settings: make native debugging an explicit compatibility choice
+987ef179ebc Settings: inherit CharaROM flavor strings for regional English
+579cd44bad2 Fix whitespace in replayed CharaROM changes
+a54f732e17a Settings: tidy About phone (network addresses subpage, combined uptime/deep sleep, radio info to Model)
+02ab1470040 Settings: Duress: Add preference to security dashboard
+651aaf31f58 Settings: Add duress password management UI
+ff88dad5ef1 Settings: Rename Advanced Sounds to System Sounds
+e53094dc1d9 Settings: Re-organize sound settings page
+b3681f06856 Revert "Settings: Improve hide developer options feature"
+a79503d8267 Revert "Settings: Un-import HideDeveloperStatusUtils"
+487a567b840 Revert "Settings: Handle NPE in HideDeveloperStatusSettings"
+0b94d76e0e8 Revert "Settings: Features: HideDevStatus: Query all apps installed by any user"
+62dd0dbbccf Settings: Disable Autowipe and QSKeyguard toggles
+7f345f3f753 Settings: merge needed Calyx strings and arrays into CharaROM
+bca865c8235 Maximum failed passwords for wipe setting
+f95f7a5176c Hide app feature
+a3e88f9f13a Remove Account mentions from Private Space setup
+f041536dfbc Add Strict Location Redaction setting
+cddfb3628a3 Allow hiding user switching on lockscreen (2/2)
+a60ed34b2bf Add toggle for connectivity check
+9ec382742f5 Add standalone "Restrict USB" setting for Settings -> Security
+34c9b59fc53 Add setting for timeout-reboot
+c526ab00808 Add prop-based Chaos Engineer reference
+b9aa2b7d44e Settings: Features: HideDevStatus: Query all apps installed by any user
+dc4919ca986 Settings: Handle NPE in HideDeveloperStatusSettings
+bcf27ce93b6 Settings: Un-import HideDeveloperStatusUtils
+fb1726ef7d5 Settings: Improve hide developer options feature
+28b7ddfa2ff Settings: Features: Hide ADB and developer setting enable status [2/2]
+cb151d5031b Revert "Add Face Unlock with ParanoidSense"
+d99d3cc938a Revert "Settings: Import expressive face unlock lottie"
+c2871c1dbd7 Settings: deviceinfo: Slightly change the way the marketname is handled
+8194e70ee33 Temporarily link CharaTweaks to crDroidSettings until we have time for a proper migration
+c523a881718 init CharaTweaks
+1fd2305bbee Remove eye of horus
+df88e410d4d Settings: top_level_settings_expressive: Move account to bottom again
+d938fb49fd6 Revert "Remove crDroid "eye of Horus", add CharaROM Codename"
+442a7057965 touche. I'll just add it here then.
+9f5edea09de attempt 2 at getting Settings to read the right thing
+d4446409e77 Add Face Unlock with ParanoidSense
+bdf0695a257 Settings: Add back crdroid logo
+2a6302018ee Settings: Backport app icon from CP31.260618.005
+09925f8591c Settings: Remove stray closing tag in mode_interstitial_layout.xml
+775593f4dee Settings: fix broken mobile network reset button
+40f88fc69c0 Settings: Use InstrumentedFragment to avoid NPE
+cfdf8e20765 Settings: Retain udfps overlay shown state on restoring activity
+5cfc3970244 WifiDisplaySettings: Fix some NPE
+f35b3682f4f Settings: fix npe when opening WiFi dialog for networks without WifiConfiguration
+f40c9573fe0 Settings: expose SIM PIN scrambling on both SIM protection screens
+70322d0a2ea Settings: warn about private space hiding limitations
+a703a34d00c Settings: explicitly request permission for isolated custom fonts
+dd65376f63b Merge crDroid 17.0 Settings updates, preserving CharaROM integration
+
+   * packages/apps/SetupWizard
+e7428ac Automatic translation import
+31e2846 Automatic translation import
+dfa5c00 Revert "SUW: Use a lottie for Welcome screen"
+5bf882b Revert "SetupWizard: Update welcome animation logo"
+34de7db Do not add SUW extras to EUICC intent
+afb9e60 SetupWizard: Add button to setup eSIM on missing SIM page
+c68cae5 Switch network setup and missing SIM activity order
+
+   * packages/modules/Bluetooth
+8430f98eda handle user profiles when sending broadcasts
+7287525799 Fix L2CAP heap overflow by enforcing minimum MPS
+dbfb698d3b Bluetooth: null deref fix in BT metrics logging
+
+   * packages/modules/Connectivity
+d182afc08d tests: isolate NSD lockdown lookup and cover connector decisions
+bc55edf61c prevent NsdService connections for regular lockdown VPN clients
+65ca3e5b73 prevent SO_BINDTODEVICE for regular apps under VPN lockdown
+c7823bc731 drop multicast when lockdown VPN enabled
+d9573745f8 disable unprivileged hardware keepalives
+664b01cd3b Connectivity: adapt selected legacy BPF compatibility changes
+933954c7a5 disable CLOSE_QUIC_CONNECTION power optimization that bypasses VPN
+bcc6481361 CtSignatureVerifier: add missing null check to setPublicKeyFrom()
+ebcc5b8c06 CtSignatureVerifier: fix TOCTOU issue when handling downloaded files
+cd9447ba57 Merge crDroid 17.0 upstream into truffles
+
+   * packages/modules/Wifi
+94ea6f5624 fix location mode check in enforceCanAccessScanResultsForWifiScanner()
+b166923f8c fix multi-user handling bug in WifiService package state listener
+
+   * system/fs/fs_mgr
+85b54b1b libfstab: Verify GsiBootedIndicatorFile is a regular file
+7f58fc0b fs_mgr: Gate fenrir boot and remount overrides behind board opt-in
+
+   * system/sepolicy
+846ef260c sepolicy: allow init to control kernel.yama.ptrace_scope
+151661b9e sepolicy: Allow app to lookup service manager
+df394dc6a Allow init and vendor_init to access proc_type
+571a50e61 sepolicy: Allow system app to access sysfs_leds
+
+   * system/update_engine
+8cef8608 update_device.py: don't restart adb as root when pushing care_map.pb file
+f43d775d update_engine: fix MapAllPartitions skipped in recovery postinstall
+512fa134 update_engine: Add static ota_extractor target
+
+   * system/vold
+6e35537 vold: reject unsupported legacy key eviction before changing lock state
+76afd46 vold: support legacy v1 fscrypt keys on ENOTTY only
+517213c vold: avoid recursive app-dir lock from storage remount callers
+bfe7f9a vold: Don't hold the global lock across app dir filesystem walks
+a58abe1 vold: fix Android/media app dir ACLs and revert 777 mode
+
+   * vendor/addons
+e640ee7a addons: Keep corrected font package list after rebase
+92a8cf09 overlays: remove obsolete QuickTap icon resources
+31e3c30c Fix typoes
+7eced03c Add remaining fonts to config.mk
+e533678e addons: Remove overlay colors
+b3e9f01e addons: Unify nothingdot font overlays
+560eee04 addons: Remove google sans flex font package which is default
+
+   * vendor/apn
+a8dd5be CN: Add CBN (cbnet)
+439cc21 pre-commit: Add make-apns hook
+
+   * vendor/lineage
+8f08bde3 vendor: common: add missing endif
+58d141f5 overlay: move framework policy defaults to base and drop stale resources
+6f1b27cf kernel: Add flag to set KCONFIG_EXT_PREFIX
+f39f0738 vendor: more Truffles fixups
+0c636f8f vendor: move fdroid stuff to chararom.mk
+61d2d402 config: restrict insecure ADB opt-in to userdebug builds
+781bc1c3 kernel: guard empty module lists
+2d41796b lineage: Move eligible default account types to system_ext RRO
+837ab09d Allow DavX5 and Google Contacts as default contact account
+0329eded vendor: remove obsolete QuickTap product package
+48b1cabd Merge crDroid 17.0 vendor updates preserving CharaROM policy
+
